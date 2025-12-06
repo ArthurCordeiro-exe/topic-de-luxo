@@ -4,7 +4,10 @@ class Passageiro:
         self.idade = idade
 
     def ePrioridade(self):
-        return True
+        if self.idade >= 65:
+            return True
+        else:
+            return False
 
     def getNome(self):
-        return None
+        return self.nome
